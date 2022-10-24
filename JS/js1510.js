@@ -23,7 +23,7 @@
 // console.log(b/a)
 // console.log(b % a) 
 
-// var a = 95 ;
+ var a = 95 ;
 // var b = 55 ;
 // if ( a >= 51 & a <= 60) 
 // {
@@ -66,7 +66,7 @@
 
 // var a = 95 ;
 // var b = 55 ;
-// var result = '';
+// var result = '';//
 // var resultB = ''
 // /// if a
 
@@ -160,9 +160,12 @@
 
 
 
+// // 3. Find the grade for input marks (you should have at least two input marks). Grades are:
+// // A (91-100), B (81-90), C (71-80), D (61-70), E (51-60). Optionally print if student has failed the exam.
 
-
-
+// var a = 44;
+// var b = 88;
+// if (a )
 
     
 

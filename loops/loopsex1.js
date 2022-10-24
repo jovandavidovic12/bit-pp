@@ -2,15 +2,15 @@
 // that sum on screen.
 
 
-// var number = 10; 
-// var i = 1 ;
-// var sum = 0 ;
+var number = 10; 
+var i = 1 ;
+var sum = 0 ;
 
-// for (i=1; i <= number; i++)
-// {
-//     sum += i;
-// }   
-// console.log(sum) 
+for (i=1; i <= number; i++)
+{
+    sum += i
+}   console.log(sum) 
+
 
 // 2. Write a code to display the cube of the number up to given an integer and show it on screen.
 //  Example: 2 up to cube equals 8.
@@ -96,16 +96,16 @@
 // 1. Write a for loop that will iterate from 0 to 15. For each iteration, it will check if the current
 // number is odd or even, and display a message to the screen.
 // for (var i=0; i<=15; i++) {
-    // if (i === 0) {
-    //         console.log(i +  " is even");
-    // }
-    // else if (i % 2 === 0) {
-    //         console.log(i + " is even");   
-    // }
-    // else {
-    //         console.log(i + " is odd");
-    // }
-}
+//     if (i === 0) {
+//             console.log(i +  " is even");
+//     }
+//     else if (i % 2 === 0) {
+//             console.log(i + " is even");   
+//     }
+//     else {
+//             console.log(i + " is odd");
+//     }
+// }
 
 // 2. Write a program to sum the multiples of 3 and 5 under 1000.
 
@@ -129,16 +129,16 @@
 // }
 // console.log(sum + p);
 
-// var array = [1, 2, 3, 4, 5, 6],
-//     s = 0,
-//     p = 1,
-//     i;
-// for (i = 0; i < array.length; i += 1) 
-//    {
-//     s += array[i];
-//     p *= array[i];
-//     }
-// console.log('Sum : '+s + ' Product :  ' +p); 
+var array = [1, 2, 3, 4, 5, 6],
+    s = 0,
+    p = 1,
+    i;
+for (i = 0; i < array.length; i += 1) 
+   {
+    s += array[i];
+    p *= array[i];
+    }
+console.log('Sum : '+s + ' Product :  ' +p); 
 
 
 // 4. Write a program which prints the elements of the following array as a single string.
@@ -151,14 +151,39 @@
 
 
 
+// 6. Write a program that outputs the sum of squares of the first 20 numbers.
 
-// var a = [[1, 2, 1, 24], [8, 11, 9, 4], [7, 0, 7, 27], [7, 4, 28, 14], [3, 10, 26, 7]];
- 
-// for (var i in a) 
-// {
-//    console.log( i);
-//    for (var j in a[i]) 
-//      {
-//       console.log( a[i][j]);
-//      }
+
+// var sum = 0 ;
+// var sq = 0;
+// for (i = 1; i <= 20; i++){
+//     sq *= i * i;
+    
+//     console.log(sq)
 // }
+
+
+
+// let sumOfSquares = 0;
+// let firstNumberToSum = 1;
+// let lastNumberToSum = 20;
+
+// for(let i = firstNumberToSum; i <= lastNumberToSum; i++){
+//     sumOfSquares += i * i;
+// }
+
+// console.log(sumOfSquares);
+
+
+
+// let number = 232;
+// let sumOfDigits = 0;
+
+// number = number.toString();
+
+// for(let i = 0; i < number.length; i++){
+//     sumOfDigits += parseInt(number[i]);
+//     console.log(sumOfDigits);
+// }
+
+

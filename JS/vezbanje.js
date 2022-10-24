@@ -74,6 +74,8 @@
 //     else if (speed >= 120 || speed == 120) {
 //     console.log('vozis van propisa') }
 
+var a = 31;
+var b = 90;
 
 
 
