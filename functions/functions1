@@ -1,0 +1,183 @@
+// // 1. Write a program that calculates the maximum of two given numbers.
+
+function maxOfTwoNumbers(a, b) {
+    if (a > b) {
+        return a;
+    }
+    return b;
+
+}
+
+result = maxOfTwoNumbers(5, 1)
+console.log(result)
+
+
+// // 2.Write a program that checks if a given number is odd.
+
+function oddNum(a) {
+    if (a % 2 == 0) {
+        return 'The Number ' + a + ' is Even ';
+    }
+    else {
+        return 'The Number ' + a + ' Is odd'
+    }
+}
+
+var result = oddNum(8);
+console.log(result);  
+
+
+// // 3 Write a program that checks if a given number is a three digit long number.
+
+function three(a){
+    var b = a + '';
+    if (b.length === 3){
+        return 'Is three digits long';
+    } else {
+        return 'Number is not three digits long';
+    }
+}
+var result = three(222);
+console.log(result)
+
+
+// // 4. Write a program that calculates an arithmetic mean of four numbers.
+
+function artM (a, b, c, d){
+    return(a+b+c+d)/4;
+}
+
+var result = artM(3,2,5,9);
+console.log(result);
+
+// 5. Write a program that draws a square of a given size. For example, if the size of square
+// is 5 the program should draw:
+// *****
+// * *
+// * *
+// * *
+// *****
+
+// 6. Write a program that draws a horizontal chart representing three given values. For
+// example, if values are 5, 3, and 7, the program should draw:
+// * * * * *
+// * * *
+// * * * * * * *
+
+
+// 7. Write a program that calculates a number of digits of a given number.
+
+function nOfDigs(a){
+    var b = a + '';
+    var result = b.length;
+    return result;
+}
+
+var num = nOfDigs(232)
+console.log(num)
+
+
+// 8. Write a program that calculates a number of appearances of a given number in a given
+// array.
+// Inputs: a = [2, 4, 7, 8, 7, 7, 1], e = 7
+// Result: 3
+
+
+function appearances(a,b){
+    var app = 0;
+    for (var i = 0; i< a.length; i++){
+        if (a[i] === b){
+            app ++;
+        }
+    } return app;
+}
+
+var result = appearances([7,7,7,7,7,7], 7);
+console.log(result)
+
+// 8. Write a program that calculates a number of appearances of a given number in a
+// given array.
+// Inputs: a = [2, 4, 7, 8, 7, 7, 1], e = 7
+// Result: 3
+
+// function sumOfElements(input){
+//     var res = 0;
+//     for (var i = 0; i <input.length; i++){
+//         if(input[i] %2 != 0){
+//             res += input[i];
+//         }
+//     } 
+//     return res;
+
+// }
+// console.log(sumOfElements([1,2,3,4,5,6,7]))
+
+// function sumOfNum(a){
+//     var sum = 0;
+//     for(var i = 0; i < a.length; i++){
+//         if(a[i] % 2 !== 0){
+//             sum += a[i];
+//         }
+    
+//     } return sum;
+// }
+
+// var result = sumOfNum([3,3,3,3,3]);
+// console.log(result)
+
+
+// 9. Write a program that calculates the sum of odd elements of a given array.
+
+function oddElements(arr){
+    var sum = 0;
+    for(var i = 0; i < arr.length; i++){
+        if(arr[i] % 2 == 1){
+            sum += arr[i];
+            sum++;
+            console.log(sum)
+        }
+    } return sum;
+}
+
+console.log(oddElements([1], [3], [3]));
+// 10. Write a program that calculates the number of appearances of a letter a in a
+// given string. Modify the program so it calculates the number of both letters a and
+// A.
+
+
+function calculateApp(input, value){
+    var counter = 0;
+    for(var i = 0; i< input.length; i++){
+        if(value === input[i]){
+            counter++
+        }
+    }
+    return counter;
+}
+
+console.log(calculateApp([1,2,3,1,3,2,1,2,2,3,1], 1))
+
+// function appearancesOfLetter (a , b){
+//     var app = 0;
+//     var c = a;
+//     for(i = 0; i < c.length; i++){
+//         if(c[i] === b ){
+//             app++;
+//         }
+//     } return app;
+// }
+// var result = appearancesOfLetter('Jovan Davidovic', 'a');
+// console.log(result)
+
+// 11. Write a program that concatenates a given string given number of times. For
+// example, if “abc” and 4 are given values, the program prints out abcabcabcabc.
+
+
+// function concat(input, n){
+//     var result = '';
+//     for(var i = 0; i < n; i++){
+//         result += input;
+//     }
+//     return result;
+// }
+// console.log(concat('test',4))
