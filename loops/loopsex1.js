@@ -442,3 +442,111 @@
 // Output array: [4, 6, 8]
 // 10. Write a program that inserts a given element e on the given position p in the array a. If
 // the value of the position is greater than the array length, print the error message.
+
+
+
+
+var b = 0xA41;
+console.log(typeof b)
+console.log(typeof typeof 1)
+console.log(2 < 3 < 1)
+var a = [[1, 2, 3], [4,5,6], 8, [9,10]];
+console.log(a[3][0])
+console.log('good morning')
+console.log(2 < 3 + 5)
+var x ;
+console.log(x)
+
+var arr = ['s', 'c', 'r', 'i', 'p', 't']
+arr.length = 0;
+console.log(arr)
+
+
+var arr = ['a,', 'e', 'gh', 'jkl']
+console.log(arr[2])
+
+
+var a = 4;
+var b = 3;
+if (a = b){
+    console.log('equal') 
+}
+    else {
+        console.log('notqe') ;
+    }
+
+    var a = 12;
+    var res = 2;
+    if  ( a > 10){
+        res = res + 2;
+    } else {
+        res = res - 2
+    }
+    console.log(res)
+
+
+    var x = [1, 8 , 9, 9, 2];
+    console.log(x[13])
+    console.log(typeof 2 + 3)
+
+    var x = 10;
+    var y = 5;
+    console.log(x + 'y = ' + (x+y));
+
+
+
+    var a = 10; b = 5;
+    var result = a || b++;
+    console.log(a,b)
+
+    console.log(2e2 + 1)
+
+
+    console.log(2 > 10 ? 'two' : 5 > 3 ? 'five' : 'three')
+
+    var x = 10;
+    var y = 5;
+    console.log(x + 'y =' x+y);
+
+
+    console.log([2, 3, 4] == [2, 3, 4])
+
+    
+    var a = 1;
+    var y = 3;
+    var z = 8;
+    var x = y = z = 8;
+    console.log(x, y, z)
+
+    var n = 10;
+    n *= 4;
+    console.log(n)
+
+    var a = [2,3 , 'abc', 11, -7];
+    console.log(a[a.length - 1])
+
+    console.log(2 < 3 < 1)
+
+
+    var x = 10;
+    var y = 5;
+    console.log(x + 'y = ' + x + y)
+
+    var a = [2, 3, 4] ;
+    var b = [2, 3, 5];
+    if (a == b){
+        console.log('true')
+    } else {
+        console.log('false')
+    }
+
+
+    var a = 3
+    var b = 4;
+    var c = (a = b) ;
+    console.log(typeof c)
+
+
+
+
+    
