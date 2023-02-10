@@ -1,3 +1,6 @@
+// Nije zavrsen zadatak! 
+
+
 var movies = [];
 var program_movies = [];
 var programsForDropDown = [];
