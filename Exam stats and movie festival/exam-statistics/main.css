@@ -1,0 +1,170 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-image: url('https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1973&q=80');
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 20px;
+
+}
+
+.header h4 {
+    padding: 30px;
+    font-size: 40px;
+}
+
+span {
+    text-align: right;
+}
+
+.stat-top {
+    width: 300px;
+    text-align: center;
+    margin: 5px auto;
+    height: 50px;
+    border-radius: 6px;
+
+
+
+}
+
+#passed-counter {
+    float: right;
+}
+
+#failed-counter {
+    float: right;
+}
+
+
+.stat-top p {
+    padding: 14px;
+    text-align: start
+}
+
+.passed-header {
+    background-color: rgb(87, 189, 87);
+
+}
+
+.failed-header {
+    background-color: red;
+
+}
+
+.adder {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    height: 50px;
+    background-color: rgb(199, 176, 176);
+    padding: 30px;
+}
+
+select {
+    height: 30px;
+    margin: 0px;
+    border-radius: 5px;
+    border: none;
+}
+
+input {
+    height: 30px;
+    margin: 0px;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    width: 50px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+.lists {
+    width: 50%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: center;
+}
+
+#percent {
+    float: right;
+    margin-right: 5px;
+}
+
+.lists-div {
+    flex-basis: 50%;
+}
+
+ul {
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+ul li {
+    padding: 7px;
+}
+
+li:nth-child(2n-1) {
+    background: #eee;
+}
+
+
+
+
+.passed-failed {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.passed-div {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+.passed-list {
+    list-style: none;
+
+
+}
+
+.passed-li {
+    display: flex;
+    flex-direction: row;
+    color: green;
+    background: white !important;
+    padding: 20px;
+    font-size: 20px;
+
+
+}
+
+.failed-div {
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+
+}
+
+.failed-li {
+    color: red;
+    background: white !important;
+    padding: 20px;
+    font-size: 20px;
+
+
+}

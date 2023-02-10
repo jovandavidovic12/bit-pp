@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <title>Exam-statistics</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <h4>EXAM STATISTICS</h4>
+            <h1>Total Students : <span id="total-students"></span></h1>
+
+            <div class="passed-header stat-top">
+                <p>PASSED <span id="passed-counter"></span></p>
+
+            </div>
+            <div class="failed-header stat-top">
+                <!-- <span class="counterfailedstat">FAILED  <span id="failed-counter">a</span>  <span id="percent"></span> </span> -->
+                <p class="failed-counter-percent">FAILED <span id="failed-counter"></span> <span id="percent"></span>
+                </p>
+
+            </div>
+        </div>
+        <div class="adder">
+            <form action="input">
+                <select name="language" id="subject">
+                    <option value="JavaScript">JavaScript</option>
+                    <option value="C#">C#</option>
+                    <option value="JAVA">JAVA</option>
+                </select>
+                <input type="text" id="name-lastname" placeholder="Name Surname">
+                <input type="text" id="grade" placeholder="Grade">
+                <button type="button" onclick="setData()"  id="btn">ADD</button>
+            </form>
+
+        </div>
+        <div class="passed-failed">
+
+
+            <div class="passed-div">
+                <h3>Passed students</h3>
+                <ul id="passed-list">
+
+
+                </ul>
+            </div>
+
+            <div class="failed-div">
+                <h3>Failed students</h3>
+                <ul id="failed-list">
+
+                </ul>
+            </div>
+        </div>
+
+
+
+
+    </div>
+    <script src="./exam/form.js"></script>
+    <script src="./exam/exam.js"></script>
+    <script src="./exam/student.js"></script>
+    <script src="./exam/subject.js"></script>
+    <script src="./exam/app.js"></script>
+</body>
+
+</html>

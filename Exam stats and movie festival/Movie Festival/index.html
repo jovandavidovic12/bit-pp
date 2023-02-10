@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <link rel="stylesheet" href="main.css"> -->
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.3.js"
+        integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    <title>Movie Festival</title>
+</head>
+
+<body>
+    <div class="container col-8">
+        
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1>Movie festival</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-12">
+                <h4>Please Fill in the form</h4>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <h4>Movie</h4>
+            </div>
+        </div>
+
+        <div class="row border">
+            <div class="col-12">
+
+                <div class="row">
+
+                    <form id="select-movie">
+                        <label for="movie">Movie</label>
+                        <input type="text" class="col-12 form-control" id="movie-name" placeholder="Movie Name"  >
+                        <label for="Length">Length(min)</label>
+                        <input type="number" class="col-12 form-control" id="movie-length" placeholder="Length in min">
+
+                        <label for="Genre">Genre</label>
+                        <select name="" id="movie-select" class="col-12 form-control" required >
+                            <option>-</option>
+                            <option>Drama</option>
+                            <option>Action</option>
+                            <option>Horror</option>
+                            <option>Comedy</option>
+
+                        </select>
+                        <div class="col-12 text-danger" id="alert-movie">
+
+                        </div>
+                        <button type="button" class="btn btn-success col-12 mt-3" id="create-movie">Create Movie</button>                   
+                     </form>
+                     <div class="col-12">
+                        <ul id="movie-list">
+                            
+                        </ul>
+                     </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12" id="program-creation">
+                        <h5>Program</h5>
+                        <form class="col-12 ">
+                            <label for="date">Date</label>
+                            <input type="date" class="col-12 form-control" id="date-input">
+                            <button type="button" class="btn btn-success col-12 mt-3" id="create-program">Create Program</button>                   
+                        </form>
+                        <div class="col-12 mt-1" >
+                            <ul id="program-list">
+                                
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+
+
+                <div class="row">
+                    <div class="col-12">
+                        <form action=" " class="col-12" >
+                            <label for="movie">Movie</label>
+                            <select name="blanc" id="add-movie-to-program" class="col-12 form-control" >
+                                <option>-</option>
+                            </select>
+                            <label for="program">Movie</label>
+                            <select name="blanc"class="col-12 form-control" id="add-program-program">
+                                <option>-</option>
+                            </select>
+                            <button type="button" class="btn btn-success col-12 mt-3" id="movie-program">Create Program</button>                   
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+
+    </div>
+
+</body>
+<script src="./js/form.js"></script>
+<script src="./js/entities.js"></script>
+
+
+</html>

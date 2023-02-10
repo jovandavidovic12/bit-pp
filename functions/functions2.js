@@ -28,16 +28,7 @@ console.log(result);
 // false -> false
 
 
-function checker(a){
-    if (a === ""){
-        return true;
-    } else {
-        return false;
-    }
-} 
-var res = checker('');
-console.log(res)
-
+ ghty                                                                              
 
 // 3. Write a function that concatenates a given string n times (default is 1).
 
@@ -112,9 +103,7 @@ function lastOccurrence(string, char){
 
 console.log(lastOccurrence('joja', 'j'));
 
-// 7. Write a function to convert string into an array. Space in a string should be represented as
-// “null” in new array.
-
+ 
 let string = 'Aleksandar Bogosavljevic ';
 let array = [];
 
@@ -124,7 +113,7 @@ function convertor(str, arr){
 
        
         if(str[i] == ' '){
-            arr.push(null);
+            arr.push('-');
         } else{
             arr.push(str[i]);
         }
@@ -159,6 +148,8 @@ checkForPrime(number);
 
 //9. Write a function that replaces spaces in a string with provided separator. If separator is not
 // provided, use “-” (dash). 
+
+
 
 
 

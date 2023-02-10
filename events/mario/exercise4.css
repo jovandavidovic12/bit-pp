@@ -1,0 +1,19 @@
+.container{
+    background-image: url(./bg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 1000px;
+    height: 1000px;
+    position: relative;
+    
+    
+}
+
+.mario-static { 
+    position: absolute;
+    height: 100px;
+    bottom: 185px;
+    left: 430px;
+    /* display: none; */
+}
+

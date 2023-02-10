@@ -351,7 +351,35 @@ function sortArrayByInputLetter(input, letter){
 
 console.log(sortArrayByInputLetter(['apple', 'tea', 'amazing', 'morning', 'JavaScript']))
 
+function selectOddNumbers(numbers) {
+  return numbers.filter(function(number) {
+    return number % 2 !== 0;
+  });
+}
+var numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+var oddNumbers = selectOddNumbers(numbers);
+
+console.log(oddNumbers); // [1, 3, 5, 7, 9]
 
 
 
+function sortByA(strings) {
+  return strings.sort(function(a, b) {
+    // Count the number of "a" or "A" in each string
+    var aCount = (a.match(/a/gi) || []).length;
+    var bCount = (b.match(/a/gi) || []).length;
+    // Sort the strings based on the number of "a" or "A"
+    if (aCount < bCount) {
+      return -1;
+    } else if (aCount > bCount) {
+      return 1;
+    } else {
+      return 0;
+    }
+  });
+}
 
+var strings = ['apple', 'tea', 'amazing', 'morning', 'JavaScript'];
+var sortedStrings = sortByA(strings);
+
+console.log(sortedStrings); // ['morning', 'apple', 'tea', 'JavaScript', 'amazing']

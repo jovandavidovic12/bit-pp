@@ -53,14 +53,14 @@ function minimum(arr) {
 console.log(minimum([4, 2, 11]))
 
 
-// var arr = [2, 4, -9, 4, 4, 0, -8]
-// var min = arr[0];
-// for(var i = 0; i < arr.length; i++){
-//     if(arr[i] < min){
-//         min = arr[i];
-//     }
-//     console.log(min);
-// }
+var arr = [2, 4, -9, 4, 4, 0, -8]
+var min = arr[0];
+for(var i = 0; i < arr.length; i++){
+    if(arr[i] < min){
+        min = arr[i];
+    }
+    console.log(min);
+}
 
 // 4. Write a program that finds the second smallest number and prints out its value.
 
